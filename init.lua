@@ -18,7 +18,7 @@ return {
   },
 
   plugins = { 
-    { "folke/tokyonight.nvim", opts = {} }
+    { "folke/tokyonight.nvim", opts = {} },
   },
   -- Set colorscheme to use
   colorscheme = "tokyonight",

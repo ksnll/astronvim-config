@@ -29,6 +29,11 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>gf"] = { ":OpenGithubFile <cr>" },
+    ["<leader><leader>"] = { "<C-^>", desc = "Last edited buffer" },
+    ["]q"] = { ":silent :cnext <cr>", desc = "Last edited buffer" },
+    ["[q"] = { ":silent :cprev <cr>", desc = "Last edited buffer" },
+    ["]Q"] = { ":silent :cnfile <cr>", desc = "Last edited buffer" },
+    ["[Q"] = { ":silent :cpfile <cr>", desc = "Last edited buffer" }
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },

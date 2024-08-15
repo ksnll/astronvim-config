@@ -81,4 +81,5 @@ return {
     end,
   },
   { "tpope/vim-surround", lazy = false },
+  { "almo7aya/openingh.nvim", lazy = false }
 }

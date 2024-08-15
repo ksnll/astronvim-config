@@ -105,6 +105,7 @@ return {
         },
         ["<Esc><Esc>"] = { "<C-\\><C-n>" },
         ["<leader><leader>"] = { "<C-^>", desc = "Last edited buffer" },
+        ["<leader>;"] = { ":OpenInGHFileLines <cr>", desc = "Open in github" },
         ["]q"] = { ":silent :cnext <cr>", desc = "Last edited buffer" },
         ["[q"] = { ":silent :cprev <cr>", desc = "Last edited buffer" },
         ["]Q"] = { ":silent :cnfile <cr>", desc = "Last edited buffer" },

@@ -66,7 +66,7 @@ return {
         ["<Leader>fW"] = {
             function()
               require("telescope.builtin").live_grep {
-                additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore", "--iglob", "!.git/", "--iglob", "!node_modules", "--iglob", "!.nyc_ouput", "--iglob", "target/" }) end,
+                additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore", "--iglob", "!.git/", "--iglob", "!node_modules", "--iglob", "!.nyc_ouput", "--iglob", "!target/" }) end,
               }
             end,
             desc = "Find words in all files",

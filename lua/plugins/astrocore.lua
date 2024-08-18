@@ -62,11 +62,11 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-        ["<Leader>fF"] = { function() require("telescope.builtin").find_files({ hidden = true, no_ignore = true, file_ignore_patterns = { '.git/', 'node_modules' } }) end, desc = "Find hidden files" },
+        ["<Leader>fF"] = { function() require("telescope.builtin").find_files({ hidden = true, no_ignore = true, file_ignore_patterns = { '.git/', 'node_modules', 'target/' } }) end, desc = "Find hidden files" },
         ["<Leader>fW"] = {
             function()
               require("telescope.builtin").live_grep {
-                additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore", "--iglob", "!.git/", "--iglob", "!node_modules", "--iglob", "!.nyc_ouput" }) end,
+                additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore", "--iglob", "!.git/", "--iglob", "!node_modules", "--iglob", "!.nyc_ouput", "--iglob", "target/" }) end,
               }
             end,
             desc = "Find words in all files",

@@ -81,5 +81,13 @@ return {
     end,
   },
   { "tpope/vim-surround", lazy = false },
-  { "almo7aya/openingh.nvim", lazy = false }
+  { "almo7aya/openingh.nvim", lazy = false },
+  {
+    "2kabhishek/co-author.nvim",
+    dependencies = {
+      "stevearc/dressing.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    cmd = { "CoAuthor" },
+  },
 }

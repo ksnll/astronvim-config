@@ -7,5 +7,6 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.sql" },
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }

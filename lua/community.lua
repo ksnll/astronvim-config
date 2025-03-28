@@ -8,5 +8,5 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.sql" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- import/override with your plugins folder
 }
